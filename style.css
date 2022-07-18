@@ -1,0 +1,29 @@
+@keyframes scroll{
+    0%{
+        transform: translate(0);
+    }
+    100%{
+        transform: translate(calc(-250px * 7));
+    }
+}
+.head{
+    text-align: center;
+    color:red;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration-line: underline;
+    text-decoration-color: black;  
+    text-transform: uppercase;
+}
+.container{
+    margin-top: 80px;
+    height: 100px;
+    overflow: hidden;
+    position: relative;
+    width: auto;
+}
+.container .slide-track{
+    animation: scroll 40s linear infinite;
+    display: flex;
+    width: calc(250px *14);
+
+}
